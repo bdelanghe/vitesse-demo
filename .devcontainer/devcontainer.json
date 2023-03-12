@@ -9,16 +9,17 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "antfu.goto-alias",
-        "antfu.iconify",
-        "antfu.unocss",
-        "antfu.vite",
-        "csstools.postcss",
-        "dbaeumer.vscode-eslint",
-        "lokalise.i18n-ally",
-        "streetsidesoftware.code-spell-checker",
-        "vue.volar"
-      ],
+		"antfu.goto-alias",
+		"antfu.iconify",
+		"antfu.unocss",
+		"antfu.vite",
+		"csstools.postcss",
+		"dbaeumer.vscode-eslint",
+		"lokalise.i18n-ally",
+		"streetsidesoftware.code-spell-checker",
+		"vue.volar",
+		"ZixuanChen.vitest-explorer"
+	],
       "settings": {
         "cSpell.customDictionaries": {
           "custom": true, // Enable the `custom` dictionary
@@ -41,7 +42,14 @@
         "i18n-ally.localesPaths": "locales",
         "i18n-ally.sortKeys": true,
         "i18n-ally.sourceLanguage": "en",
-        "prettier.enable": false
+        "prettier.enable": false,
+        "vitest.exclude":[
+          "**/node_modules/**",
+          "**/dist/**",
+          "**/cypress/**",
+          "**/.{idea,git,cache,output,temp}/**",
+          "**/.trunk/**"
+        ]
       }
     }
   },

@@ -20,6 +20,7 @@ intlify
 keystyle
 Klogan
 lokalise
+markdownlint
 nekobc
 nocheck
 noopener
@@ -47,6 +48,7 @@ unocss
 Unocss
 unplugin
 vitailse
+vite
 vitecamp
 vitesse
 Vitesse
@@ -56,4 +58,5 @@ webext
 withfig
 xbmlz
 xiaoluoboding
+Zixuan
 zynth
