@@ -39,5 +39,6 @@
     "**/.{idea,git,cache,output,temp}/**",
     "**/.trunk/**"
   ],
-  "vitest.showFailMessages": false
+  "vitest.showFailMessages": false,
+  "volar.doctor.checkVueTsc": true
 }
