@@ -7,23 +7,62 @@
 		"dockerfile": "Dockerfile"
 	},
 	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {},
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true
+		},
 		"ghcr.io/withfig/features/fig:1": {},
 		"ghcr.io/trunk-io/devcontainer-feature/trunk:1": {}
 	},
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
-	// Uncomment the next line to run commands after the container is created.
 	"postCreateCommand": "cat /etc/os-release",
-
 	// Configure tool-specific properties.
-	// "customizations": {},
-
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"cSpell.words": [
+					"Vitesse",
+					"Vite",
+					"unocss",
+					"vitest",
+					"vueuse",
+					"pinia",
+					"demi",
+					"antfu",
+					"iconify",
+					"intlify",
+					"vitejs",
+					"unplugin",
+					"pnpm"
+				],
+				"i18n-ally.sourceLanguage": "en",
+				"i18n-ally.keystyle": "nested",
+				"i18n-ally.localesPaths": "locales",
+				"i18n-ally.sortKeys": true,
+				"prettier.enable": false,
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": true
+				},
+				"files.associations": {
+					"*.css": "postcss"
+				},
+				"editor.formatOnSave": false
+			},
+			"extensions": [
+				"antfu.goto-alias",
+				"antfu.iconify",
+				"antfu.unocss",
+				"antfu.vite",
+				"csstools.postcss",
+				"dbaeumer.vscode-eslint",
+				"lokalise.i18n-ally",
+				"streetsidesoftware.code-spell-checker",
+				"vue.volar"
+			]
+		}
+	}
 	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "devcontainer"
 }
