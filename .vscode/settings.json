@@ -24,13 +24,20 @@
   "vite.autoStart": false,
   "vite.buildCommand": "pnpm build",
   "vite.devCommand": "pnpm dev",
-  "vite.showTerminal": true,
   "vite.port": 3333,
-  "vitest.exclude":[
+  "vite.showTerminal": true,
+  "vitest.commandLine": "npx vitest",
+  "vitest.debugExclude": [
+    "<node_internals>/**",
+    "**/node_modules/**"
+  ],
+  "vitest.enable": true,
+  "vitest.exclude": [
     "**/node_modules/**",
     "**/dist/**",
     "**/cypress/**",
     "**/.{idea,git,cache,output,temp}/**",
     "**/.trunk/**"
-  ]
+  ],
+  "vitest.showFailMessages": false
 }

@@ -9,7 +9,7 @@
     "lint": "trunk check --all",
     "preview": "vite preview",
     "preview-https": "serve dist",
-    "test": "vitest",
+    "test": "npx vitest",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
