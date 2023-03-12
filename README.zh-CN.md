@@ -89,7 +89,7 @@
 - [VueUse](https://github.com/antfu/vueuse) - 实用的 Composition API 工具合集
 - [`vite-ssg-sitemap`](https://github.com/jbaubree/vite-ssg-sitemap) - 站点地图生成器
 - [`@vueuse/head`](https://github.com/vueuse/head) - 响应式地操作文档头信息
-- [`vite-plugin-vue-inspector`](https://github.com/webfansplz/vite-plugin-vue-inspector) - 点击页面元素自动跳转到本地IDE对应的 Vue 组件
+- [`vite-plugin-vue-inspector`](https://github.com/webfansplz/vite-plugin-vue-inspector) - 点击页面元素自动跳转到本地 IDE 对应的 Vue 组件
 
 ### 编码风格
 
@@ -97,6 +97,7 @@
 - [ESLint](https://eslint.org/) 配置为 [@antfu/eslint-config](https://github.com/antfu/eslint-config), 单引号, 无分号.
 
 ### 开发工具
+
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vitest](https://github.com/vitest-dev/vitest) - 基于 Vite 的单元测试框架
 - [Cypress](https://cypress.io/) - E2E 测试
@@ -151,7 +152,7 @@ pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
 - [ ] 在 `LICENSE` 中改变作者名
 - [ ] 在 `App.vue` 中改变标题
 - [ ] 在 `vite.config.ts` 更改主机名
-- [ ] 在 `public` 目录下改变favicon
+- [ ] 在 `public` 目录下改变 favicon
 - [ ] 移除 `.github` 文件夹中包含资助的信息
 - [ ] 整理 README 并删除路由
 
