@@ -11,3 +11,4 @@ cypress/downloads
 .pnpm-store
 *.mjs
 test/__snapshots__
+cypress/videos
