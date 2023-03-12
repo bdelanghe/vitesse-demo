@@ -1,14 +1,44 @@
 {
-  "i18n-ally.sourceLanguage": "en",
-  "i18n-ally.keystyle": "nested",
-  "i18n-ally.localesPaths": "locales",
-  "i18n-ally.sortKeys": true,
-  "prettier.enable": false,
+  "cSpell.customDictionaries": {
+    "custom": true, // Enable the `custom` dictionary
+    "internal-terms": false, // Disable the `internal-terms` dictionary 
+    "project-words": {
+      "addWords": true,
+      "description": "Words used in this project",
+      "name": "project-words",
+      "path": "${workspaceRoot}/project-words.txt"
+    }
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "editor.formatOnSave": false,
   "files.associations": {
     "*.css": "postcss"
   },
-  "editor.formatOnSave": false
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.localesPaths": "locales",
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.sourceLanguage": "en",
+  "prettier.enable": false,
+  "vite.autoStart": false,
+  "vite.buildCommand": "pnpm build",
+  "vite.devCommand": "pnpm dev",
+  "vite.port": 3333,
+  "vite.showTerminal": true,
+  "vitest.commandLine": "npx vitest",
+  "vitest.debugExclude": [
+    "<node_internals>/**",
+    "**/node_modules/**"
+  ],
+  "vitest.enable": true,
+  "vitest.exclude": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/cypress/**",
+    "**/.{idea,git,cache,output,temp}/**",
+    "**/.trunk/**"
+  ],
+  "vitest.showFailMessages": false,
+  "volar.doctor.checkVueTsc": true
 }

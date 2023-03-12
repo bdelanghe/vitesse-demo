@@ -9,12 +9,11 @@
     "lint": "trunk check --all",
     "preview": "vite preview",
     "preview-https": "serve dist",
-    "test": "vitest",
+    "test": "npx vitest",
     "test:e2e": "cypress open",
     "test:unit": "vitest",
     "typecheck": "vue-tsc --noEmit",
-    "up": "taze major -I",
-    "postinstall": "npx simple-git-hooks"
+    "up": "taze major -I"
   },
   "dependencies": {
     "@unocss/reset": "^0.50.3",
@@ -31,6 +30,7 @@
     "@antfu/eslint-config": "^0.36.0",
     "@iconify-json/carbon": "^1.1.16",
     "@intlify/unplugin-vue-i18n": "^0.8.2",
+    "@trunkio/launcher": "^1.2.3",
     "@types/markdown-it-link-attributes": "^3.0.1",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "^4.0.0",
@@ -66,11 +66,5 @@
     "vite-ssg-sitemap": "^0.4.3",
     "vitest": "^0.29.2",
     "vue-tsc": "^1.2.0"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
   }
 }

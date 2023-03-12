@@ -18,7 +18,8 @@
 		"lokalise.i18n-ally",
 		"streetsidesoftware.code-spell-checker",
 		"vue.volar",
-		"ZixuanChen.vitest-explorer"
+		"ZixuanChen.vitest-explorer",
+		"Vue.volar"
 	],
       "settings": {
         "cSpell.customDictionaries": {
@@ -46,15 +47,22 @@
         "vite.autoStart": false,
         "vite.buildCommand": "pnpm build",
         "vite.devCommand": "pnpm dev",
-        "vite.showTerminal": true,
         "vite.port": 3333,
-        "vitest.exclude":[
+        "vite.showTerminal": true,
+        "vitest.commandLine": "npx vitest",
+        "vitest.debugExclude": [
+          "<node_internals>/**",
+          "**/node_modules/**"
+        ],
+        "vitest.enable": true,
+        "vitest.exclude": [
           "**/node_modules/**",
           "**/dist/**",
           "**/cypress/**",
           "**/.{idea,git,cache,output,temp}/**",
           "**/.trunk/**"
-        ]
+        ],
+        "vitest.showFailMessages": false
       }
     }
   },
@@ -70,7 +78,7 @@
     "ghcr.io/trunk-io/devcontainer-feature/trunk:1": {},
     "ghcr.io/withfig/features/fig:1": {}
   },
-  "name": "Node.js & TypeScript",
+  "name": "Node.js & TypeScript"
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // "postCreateCommand": "pnpm install"
