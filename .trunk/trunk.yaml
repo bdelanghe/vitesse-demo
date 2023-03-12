@@ -9,6 +9,7 @@ plugins:
 lint:
   enabled:
     - actionlint@1.6.23
+    - cspell@6.29.0
     - eslint@8.35.0
     - git-diff-check
     - gitleaks@8.16.0
