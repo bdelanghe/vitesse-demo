@@ -1,68 +1,77 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-  "name": "Node.js & TypeScript",
   "build": {
     // Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
     "dockerfile": "Dockerfile"
   },
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": true,
-      "configureZshAsDefaultShell": true,
-      "installOhMyZsh": true
-    },
-    "ghcr.io/withfig/features/fig:1": {},
-    "ghcr.io/trunk-io/devcontainer-feature/trunk:1": {}
-  },
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [],
-  "postCreateCommand": "cat /etc/os-release",
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
+      "extensions": [
+		"antfu.goto-alias",
+		"antfu.iconify",
+		"antfu.unocss",
+		"antfu.vite",
+		"csstools.postcss",
+		"dbaeumer.vscode-eslint",
+		"lokalise.i18n-ally",
+		"streetsidesoftware.code-spell-checker",
+		"vue.volar",
+		"ZixuanChen.vitest-explorer"
+	],
       "settings": {
-        "cSpell.words": [
-          "Vitesse",
-          "Vite",
-          "unocss",
-          "vitest",
-          "vueuse",
-          "pinia",
-          "demi",
-          "antfu",
-          "iconify",
-          "intlify",
-          "vitejs",
-          "unplugin",
-          "pnpm"
-        ],
-        "i18n-ally.sourceLanguage": "en",
-        "i18n-ally.keystyle": "nested",
-        "i18n-ally.localesPaths": "locales",
-        "i18n-ally.sortKeys": true,
-        "prettier.enable": false,
+        "cSpell.customDictionaries": {
+          "custom": true, // Enable the `custom` dictionary
+          "internal-terms": false, // Disable the `internal-terms` dictionary 
+          "project-words": {
+            "addWords": true,
+            "description": "Words used in this project",
+            "name": "project-words",
+            "path": "${workspaceRoot}/project-words.txt"
+          }
+        },
         "editor.codeActionsOnSave": {
           "source.fixAll.eslint": true
         },
+        "editor.formatOnSave": false,
         "files.associations": {
           "*.css": "postcss"
         },
-        "editor.formatOnSave": false
-      },
-      "extensions": [
-        "antfu.goto-alias",
-        "antfu.iconify",
-        "antfu.unocss",
-        "antfu.vite",
-        "csstools.postcss",
-        "dbaeumer.vscode-eslint",
-        "lokalise.i18n-ally",
-        "streetsidesoftware.code-spell-checker",
-        "vue.volar"
-      ]
+        "i18n-ally.keystyle": "nested",
+        "i18n-ally.localesPaths": "locales",
+        "i18n-ally.sortKeys": true,
+        "i18n-ally.sourceLanguage": "en",
+        "prettier.enable": false,
+        "vite.autoStart": false,
+        "vite.buildCommand": "pnpm build",
+        "vite.devCommand": "pnpm dev",
+        "vite.showTerminal": true,
+        "vite.port": 3333,
+        "vitest.exclude":[
+          "**/node_modules/**",
+          "**/dist/**",
+          "**/cypress/**",
+          "**/.{idea,git,cache,output,temp}/**",
+          "**/.trunk/**"
+        ]
+      }
     }
-  }
+  },
   // Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "devcontainer"
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": true,
+      "installZsh": true
+    },
+    "ghcr.io/devcontainers/features/git": {},
+    "ghcr.io/trunk-io/devcontainer-feature/trunk:1": {},
+    "ghcr.io/withfig/features/fig:1": {}
+  },
+  "name": "Node.js & TypeScript",
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // "postCreateCommand": "pnpm install"
 }

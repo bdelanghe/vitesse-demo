@@ -7,16 +7,14 @@ plugins:
       ref: v0.0.12
       uri: https://github.com/trunk-io/plugins
 lint:
+  definitions:
+    - name: cspell
+      affects_cache:
+        - project-words.txt
   enabled:
-    - actionlint@1.6.23
+    # npx cspell-cli "." --words-only --unique --no-progress
+    - cspell@6.5.0
     - eslint@8.35.0
-    - git-diff-check
-    - gitleaks@8.16.0
-    - hadolint@2.12.0
-    - markdownlint@0.33.0
-    - oxipng@8.0.0
-    - prettier@2.8.4
-    - taplo@0.7.0
 runtimes:
   enabled:
     - node@18.12.1
