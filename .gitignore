@@ -11,3 +11,4 @@ cypress/downloads
 .pnpm-store
 *.mjs
 *.d.ts
+test/__snapshots__

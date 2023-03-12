@@ -4,7 +4,7 @@
   "packageManager": "pnpm@7.28.0",
   "scripts": {
     "build": "vite-ssg build",
-    "dev": "vite --port 3333 --open",
+    "dev": "vite --open",
     "format": "trunk fmt --all",
     "lint": "trunk check --all",
     "preview": "vite preview",

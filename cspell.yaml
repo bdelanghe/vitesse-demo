@@ -1,5 +1,5 @@
 $schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-version: '0.2'
+version: "0.2"
 dictionaryDefinitions:
   - name: project-words
     path: ./project-words.txt
@@ -10,4 +10,8 @@ ignorePaths:
   - node_modules
   - /project-words.txt
   - locales
-  - 'pnpm-lock.*'
+  - pnpm-lock.*
+enableFiletypes:
+  - vue-directives
+  - vue-injection-markdown
+  - vue-sfc-style-variable-injection
