@@ -17,7 +17,7 @@
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
-  "postCreateCommand": "cat /etc/os-release",
+  // "postCreateCommand": "cat /etc/os-release",
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
