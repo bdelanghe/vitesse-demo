@@ -8,7 +8,8 @@ plugins:
       uri: https://github.com/trunk-io/plugins
 lint:
   enabled:
-    - cspell@6.5.0
+    # npx cspell-cli "." --words-only --unique --no-progress
+    # - cspell@6.5.0
     - eslint@8.35.0
 runtimes:
   enabled:
