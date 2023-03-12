@@ -10,5 +10,4 @@ node_modules
 cypress/downloads
 .pnpm-store
 *.mjs
-test/__snapshots__
 cypress/videos
