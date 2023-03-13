@@ -48,6 +48,7 @@ typecheck
 unocss
 Unocss
 unplugin
+usermod
 vitailse
 vite
 vitecamp
